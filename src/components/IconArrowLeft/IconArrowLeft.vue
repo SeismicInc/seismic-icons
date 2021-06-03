@@ -1,0 +1,13 @@
+<template>
+<svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.6851 18.6483C16.2531 18.0311 16.2531 17.0306 15.6851 16.4135L11.6227 12L15.6851 7.58654C16.2531 6.96942 16.2531 5.96886 15.6851 5.35174C15.117 4.73461 14.1961 4.73461 13.628 5.35174L8.53714 10.8826C7.9691 11.4997 7.9691 12.5003 8.53714 13.1174L13.628 18.6483C14.1961 19.2654 15.117 19.2654 15.6851 18.6483Z" />
+</svg>
+
+</template>
+
+<script>
+
+export default {
+  name: 'IconArrowLeft',
+}
+</script>

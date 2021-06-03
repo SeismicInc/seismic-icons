@@ -1,24 +1,19 @@
 # seismic-icons
 
-## Project setup
+## To generate or update components, load new icons to ./src/icons and run
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+node ./format-icons-to-components.js
 ```
 
-### Compiles and minifies for production
+
+## Tell Vue CLI that you want this project built as a library
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Builds the library before publishing to npm; points to `build` script above
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+npm run prepublishOnly
+```

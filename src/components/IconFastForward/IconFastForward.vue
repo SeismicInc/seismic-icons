@@ -1,0 +1,14 @@
+<template>
+<svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.6 11.2L12.6 5.20001C11.9408 4.70559 11 5.17597 11 6.00001V18C11 18.8241 11.9408 19.2944 12.6 18.8L20.6 12.8C21.1333 12.4 21.1333 11.6 20.6 11.2ZM13.8 3.60001C11.8223 2.11673 9 3.52788 9 6.00001V18C9 20.4721 11.8223 21.8833 13.8 20.4L21.8 14.4C23.4 13.2 23.4 10.8 21.8 9.60001L13.8 3.60001Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 18V6C5 5.44772 4.55228 5 4 5C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19C4.55228 19 5 18.5523 5 18ZM4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21C5.65685 21 7 19.6569 7 18V6C7 4.34315 5.65685 3 4 3Z" />
+</svg>
+
+</template>
+
+<script>
+
+export default {
+  name: 'IconFastForward',
+}
+</script>
