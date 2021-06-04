@@ -1,7 +1,7 @@
 import * as components from './index'
 
 const ComponentLibrary = {
-    install(Vue, options = {}) {
+    install(Vue) {
         for (const componentName in components) {
             const component = components[componentName]
 
