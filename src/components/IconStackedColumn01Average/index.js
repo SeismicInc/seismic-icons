@@ -1,2 +1,0 @@
-import IconStackedColumn01Average from './IconStackedColumn01Average.vue'
-export default IconStackedColumn01Average

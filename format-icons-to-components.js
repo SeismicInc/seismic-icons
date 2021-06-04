@@ -17,26 +17,9 @@ files.forEach((file) => {
         console.log('Creating -', fileName)
         const template = createTemplate(fileName, convertContent(data))
 
-        const iconDir = `${componentsDir}/${fileName.replace('.vue', '')}`
-        console.log('iconDir', iconDir)
         console.log('---------------------------')
-        if (!fs.existsSync(iconDir)) {
-            fs.mkdirSync(iconDir)
-        }
-        fs.writeFile(`${iconDir}/${fileName}`, template, function (err) {
-            if (err) throw err
-        })
 
-        const indexTemplate = `import ${fileName.replace('.vue', '')} from './${fileName}'
-export default ${fileName.replace('.vue', '')}`
-        fs.writeFile(`${iconDir}/index.js`, indexTemplate, function (err) {
-            if (err) throw err
-        })
-
-        const fileExport = `export { default as ${fileName.replace('.vue', '')} } from './components/${fileName.replace('.vue', '')}'
-
-`
-        fs.appendFile('./src/index.js', fileExport, function (err) {
+        fs.writeFile(`${componentsDir}/${fileName}`, template, function (err) {
             if (err) throw err
         })
     })

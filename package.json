@@ -1,6 +1,6 @@
 {
   "name": "seismic-icons",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "main": "dist/seismic-icons.umd.min.js",
   "unpkg": "dist/seismic-icons.umd.min.js",
