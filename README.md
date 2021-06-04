@@ -17,3 +17,14 @@ npm run build
 ```
 npm run prepublishOnly
 ```
+
+## To import all components from library in your Nuxt project - add this path to your nuxt.config.js
+
+```
+components: [
+  ...
+  {
+    path: '~/node_modules/seismic-icons/src/components',
+  },
+],
+```

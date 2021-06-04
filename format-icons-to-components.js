@@ -33,10 +33,10 @@ export default ${fileName.replace('.vue', '')}`
             if (err) throw err
         })
 
-        const fileExport = `export { default as ${fileName.replace('.vue', '')} } from './${fileName.replace('.vue', '')}'
+        const fileExport = `export { default as ${fileName.replace('.vue', '')} } from './components/${fileName.replace('.vue', '')}'
 
 `
-        fs.appendFile(`${componentsDir}/index.js`, fileExport, function (err) {
+        fs.appendFile('./src/index.js', fileExport, function (err) {
             if (err) throw err
         })
     })
