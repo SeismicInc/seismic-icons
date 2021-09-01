@@ -22,6 +22,11 @@ files.forEach((file) => {
         fs.writeFile(`${componentsDir}/${fileName}`, template, function (err) {
             if (err) throw err
         })
+        const fileExport = `export { default as ${fileName.replace('.vue', '')} } from './components/${fileName.replace('.vue', '')}'
+`
+        fs.appendFile('./src/index.js', fileExport, function (err) {
+            if (err) throw err
+        })
     })
 })
 
