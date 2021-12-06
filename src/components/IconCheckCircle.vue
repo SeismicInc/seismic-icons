@@ -9,6 +9,6 @@
 <script>
 
 export default {
-  name: 'IconIconCheckCircle',
+  name: 'IconCheckCircle',
 }
 </script>
