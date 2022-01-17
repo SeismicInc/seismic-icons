@@ -5,6 +5,12 @@
   "main": "dist/seismic-icons.umd.min.js",
   "unpkg": "dist/seismic-icons.umd.min.js",
   "jsdelivr": "dist/vseismic-icons.umd.min.js",
+  "browser": {
+    ".": "src/main.js"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.21"
+  },
   "author": "Nastya",
   "license": "ISC",
   "description": "Import all svg icons to Vue component",
