@@ -1,30 +1,43 @@
-# seismic-icons
+# @seismic/icons
 
-## To generate or update components, load new icons to ./src/icons and run
-```
-node ./format-icons-to-components.js
-```
+This is a public Seismic package containing all the icons in our design system.
 
+## Usage
 
-## Tell Vue CLI that you want this project built as a library
+To use, import icon component from the package:
 
-```
-npm run build
+```js
+import { IconCalculator } from '@seismic/icons'
 ```
 
-## Builds the library before publishing to npm; points to `build` script above
+And use like you use any icon:
+
+```html
+<IconCalculator class="w-4 h-4"/>
+```
+
+## Building
+
+To build icon components, load new icons to ./src/icons and run:
 
 ```
-npm run prepublishOnly
+yarn run build
 ```
 
-## To import all components from library in your Nuxt project - add this path to your nuxt.config.js
+This will create the icons in `./dist` folder.
+
+## Publishing
+
+Before publishing, run publish command with `--dry-run` to ensure everything will work as expected:
 
 ```
-components: [
-  ...
-  {
-    path: '~/node_modules/seismic-icons/src/components',
-  },
-],
+yarn publish --dry-run
 ```
+
+To publish package to NPM, run:
+
+```
+yarn publish
+```
+
+Please note you **must** be logged in NPM registry to publish the package.
