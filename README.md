@@ -31,13 +31,13 @@ This will create the icons in `./dist` folder.
 Before publishing, run publish command with `--dry-run` to ensure everything will work as expected:
 
 ```
-yarn publish --dry-run
+npm publish --dry-run
 ```
 
 To publish package to NPM, run:
 
 ```
-yarn publish
+npm publish --access public
 ```
 
 Please note you **must** be logged in NPM registry to publish the package.
