@@ -1,5 +1,5 @@
-const { compile: compileVue } = require('@vue/compiler-dom')
-const fs = require('fs')
+import { compile as compileVue } from '@vue/compiler-dom'
+import * as fs from 'fs'
 
 const dir = './src/icons'
 const distDir = './dist'
