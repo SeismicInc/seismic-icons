@@ -1,24 +1,13 @@
 {
-  "name": "seismic-icons",
-  "version": "0.1.5",
+  "name": "@seismic/icons",
+  "version": "0.2.1",
   "private": false,
-  "main": "dist/seismic-icons.umd.min.js",
-  "unpkg": "dist/seismic-icons.umd.min.js",
-  "jsdelivr": "dist/vseismic-icons.umd.min.js",
-  "browser": {
-    ".": "src/main.js"
-  },
-  "peerDependencies": {
-    "vue": "^3.2.21"
-  },
   "author": "Nastya",
   "license": "ISC",
-  "description": "Import all svg icons to Vue component",
+  "description": "Seismic design system icons",
   "files": [
-    "dist/*",
-    "src/*"
+    "dist/*"
   ],
-  "homepage": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/SeismicInc/seismic-icons.git"
@@ -26,42 +15,12 @@
   "bugs": {
     "url": "https://github.com/SeismicInc/seismic-icons.git"
   },
+  "main": "./dist/index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name seismic-icons src/main.js",
-    "lint": "vue-cli-service lint",
-    "prepublishOnly": "$npm_execpath link"
-  },
-  "dependencies": {
-    "core-js": "^3.13.1",
-    "vue": "^3.0.0"
+    "build": "node scripts/build.js",
+    "prepublishOnly": "yarn run build"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.13",
-    "@vue/cli-plugin-eslint": "~4.5.13",
-    "@vue/cli-service": "~4.5.13",
-    "@vue/compiler-sfc": "^3.0.11",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.27.0",
-    "eslint-plugin-vue": "^7.10.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@vue/compiler-sfc": "^3.2.29"
+  }
 }
